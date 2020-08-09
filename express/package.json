@@ -1,0 +1,12 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Aprendendo a criar API's com node.js e express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas M Rodrigues",
+  "license": "MIT"
+}
