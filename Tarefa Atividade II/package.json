@@ -1,0 +1,12 @@
+{
+  "name": "node_activity",
+  "version": "1.0.0",
+  "description": "Tarefa relacionada ao modulo 2 da disciplina de node.js da pós graduação do Curso de Arquitetura de Software Distribuido da puc minas",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas M Rodrigues",
+  "license": "MIT"
+}

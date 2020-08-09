@@ -1,0 +1,2 @@
+Olá Mundo,
+ Arquivo criado via Código com node.js

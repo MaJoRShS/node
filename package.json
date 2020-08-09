@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MaJoRShS/node/issues"
   },
-  "homepage": "https://github.com/MaJoRShS/node#readme"
+  "homepage": "https://github.com/MaJoRShS/node#readme",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
 }
