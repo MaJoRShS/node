@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API com NODE.js e ExpressJS e WebSocket</title>
+</head>
+<body>
+    <h1>Atividade Modulo 04</h1>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h3>Pagina Estática retornada com ExpressJS </h3>
+
+  <div id="page-wrapper">
+    <h1>Utilizando Websocket para Fazer os cálculos</h1>
+
+    <div id="status">Conectando...</div>
+
+    <ul id="messages"></ul>
+
+    <form id="message-form" action="#" method="post">
+      <textarea
+        id="message"
+        placeholder="Escreva uma mensagem para enviar via WebSocket..."
+        required
+      ></textarea>
+      <button type="submit">Enviar mensagem</button>
+      <button type="button" id="close">Finalizar conexão</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

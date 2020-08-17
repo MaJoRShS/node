@@ -1,0 +1,24 @@
+{
+  "name": "atividade04",
+  "version": "1.0.0",
+  "description": "Projeto elaborado para testar / fixar os conhecimentos adquiridos durante o modulo 04 da pós graduação da puc minasa ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MaJoRShS/node.git"
+  },
+  "author": "Lucas M Rodrigues",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaJoRShS/node/issues"
+  },
+  "homepage": "https://github.com/MaJoRShS/node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.3.1"
+  }
+}
