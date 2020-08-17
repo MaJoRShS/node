@@ -20,55 +20,7 @@ wss.on("connection", (ws) => {
   // Função que trata as mensagens recebidas pelo servidor
   ws.on("message", (message) => {
     console.log("Mensagem recebida: ", message);
-    var rows = message.split('\n');
-    var count = rows.length;
-
-    // if (count === 0) {
-    //   rows = message.split(' ');
-    //   if (rows[1] === '+') {
-    //     const result = calc.add(parseInt(rows[0]), parseInt(rows[2]));
-    //     console.log(result);
-    //     message = String(result);
-    //   } else if (rows[1] === '-') {
-    //     result = calc.sub(parseInt(rows[0]), parseInt(rows[2]));
-    //     console.log(result);
-    //     message = String(result);
-    //   } else if (rows[1] === '*') {
-    //     result = calc.multi(parseInt(rows[0]), parseInt(rows[2]));
-    //     console.log(result);
-    //     message = String(result);
-    //   } else if (rows[1] === '/') {
-    //     result = calc.div(parseInt(rows[0]), parseInt(rows[2]));
-    //     console.log(result);
-    //     message = String(result);
-    //   }
-    // } else {
-
-    for (var row = 0; row = count; row++) {
-      rows = message.split('\n');
-      rows = message.split(' ');
-      for (var field = 0; field = count; field++) {
-        if (rows[1] === '+') {
-          const result = calc.add(parseInt(rows[0]), parseInt(rows[2]));
-          console.log(result);
-          message = String(result);
-        } else if (rows[1] === '-') {
-          result = calc.sub(parseInt(rows[0]), parseInt(rows[2]));
-          console.log(result);
-          message = String(result);
-        } else if (rows[1] === '*') {
-          result = calc.multi(parseInt(rows[0]), parseInt(rows[2]));
-          console.log(result);
-          message = String(result);
-        } else if (rows[1] === '/') {
-          result = calc.div(parseInt(rows[0]), parseInt(rows[2]));
-          console.log(result);
-          message = String(result);
-        }
-        rows.shift();
-      }
-    }
-    // }
+    calc.string(message);
     ws.send(message);
   });
 });
