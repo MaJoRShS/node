@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>API com NODE.js e ExpressJS e WebSocket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>API com NODE.js e ExpressJS e WebSocket</title>
 </head>
+
 <body>
-    <h1>Atividade Modulo 04</h1>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <h1 class="text-center">Atividade Modulo 04</h1>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <h3>Pagina Estática retornada com ExpressJS </h3>
+  <body>
 
-  <div id="page-wrapper">
-    <h1>Utilizando Websocket para Fazer os cálculos</h1>
+    <h3 class="text-center">Pagina Estática retornada com ExpressJS </h3>
 
-    <div id="status">Conectando...</div>
+    <div id="page-wrapper">
+      <h3 class="text-center">Utilizando Websocket para Fazer os cálculos</h3>
 
-    <ul id="messages"></ul>
+      <div id="status">Conectando...</div>
 
-    <form id="message-form" action="#" method="post">
-      <textarea
-        id="message"
-        placeholder="Escreva uma mensagem para enviar via WebSocket..."
-        required
-      ></textarea>
-      <button type="submit">Enviar mensagem</button>
-      <button type="button" id="close">Finalizar conexão</button>
-    </form>
-  </div>
+      <ul id="messages"></ul>
 
-  <script src="app.js"></script>
-</body>
+      <form id="message-form" action="#" method="post">
+        <textarea id="message" placeholder="Escreva uma mensagem para enviar via WebSocket..." required></textarea>
+        <button type="submit">Enviar mensagem</button>
+        <button type="button" id="close">Finalizar conexão</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
 </html>
